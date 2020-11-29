@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Basic? Template</title>
+</head>
+<body onresize="CheckDimens();" onload="SetYear();">
+    
+    <nav>
+        <a href="#" title="home">
+            <img id="logo" src="assets/images/logo.png" alt="michaellewis.ca logo">
+        </a>
+        <span>//code.</span>
+        <ul>
+            <li><a href="#about" title="about">about</a></li>
+            <li><a href="#skills" title="skills">skills</a></li>
+            <li><a href="#work" title="work">work</a></li>
+            <li><a href="#contact" title="contact">contact</a></li>
+        </ul>
+        <div id="hamburger" onclick="ToggleNav();">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div id="mobileNav">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#work">work</a>
+        <a href="#contact">contact</a>
+    </div>
+    <header>
+    </header>
+    <main>
+        <section id="about">
+            <span class="godzillaText">//ABOUT</span>
+        </section>
+        <section id="skills"><span class="godzillaText">//SKILLS</span></section>
+        <section id="work"><span class="godzillaText">//WORK</span></section>
+        <section id="contact"></section>
+    </main>
+    <footer>
+        <div id="leftFoot">
+            <img src="assets/images/codepen-64.png" alt="codepen">
+            <img src="assets/images/linkedin-64.png" alt="linkedin">
+            <a href="https://twitter.com/DragonBitStudio" target="_blank">
+                <img src="assets/images/twitter-64.png" alt="twitter">
+            </a>
+        </div>
+        <div id="rightFoot">
+            <label for="phone">1-777-3453</label>
+            <label for="address">123 Any Street</label>
+            <label for="email">support@happy.ca</label>
+            <p>&copy;</p>
+        </div>
+    </footer>
+    <a href="#" title="To top">
+        <span class="toTop">&uarr;</span>
+    </a>
+    
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
